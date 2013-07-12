@@ -1,0 +1,76 @@
+    -*- mode:text -*-
+
+Efass -- Editor for a small system.
+===================================
+
+ Welcome to the efass package.
+
+ This package is a tarball, which contains sources for the EFASS
+ editor, a case study for the 'exercises in software engineering' in
+ summer 2002 at the University of Tuebingen.
+
+ The documents are released to the public under the terms of the "Free
+ Documentation License", the associated build scripts and the sample
+ code are released to the public under the terms of the "Gnu Public
+ License". Please refer to the accompanying files
+ LICENSE-DOCUMENTS.txt and LICENSE.txt for details and license
+ terms. 
+
+ The files in the directory third-party are under another license, see
+ their respective headers. You're under no obligation to distribute
+ them with the rest of the release.
+
+
+                               Tuebingen, Dez 2002 -- M E Leypold
+
+                          ***
+
+ The rest of the documentation is in German, as are the documents
+ themselves.
+
+                        _.oOo._
+
+
+
+0 Kurzanleitung zur Generierung der Dokumente + Binaries
+   -----------------------------------------------------
+
+   a. Sie benötigen (zur Zeit noch) die Makefilebiblothek 'mklib' um
+      'efass' übersetzen und die Dokuemntation genrieren zu
+      können. Besorgen Sie sich diese Software und installieren Sie
+      diese auf Ihrem Rechner oder in Ihrem Account. Ausserdem
+      benötigen Sie 'Gnu Make' für 'mklib'.
+
+   b. Setzen Sie das Build-Verzeichnis auf: ENTWEDER Sie gehen in das
+      Quelltextverzeichnis und geben ./configure ein, ODER Sie
+      erzeugen eine neues Verzeichnis, gehen in dieses und rufen
+      'configure' mit dem Pfad des Quellverzeichnisses auf: <Pfad zum
+      Quellverzeichnis>/configure.
+
+   c. Geben Sie 'mk' ein (dies ist der GNU Make wrapper aus 'mklib').
+
+   d. Es gibt kein 'install' target. EFASS ist eine Demonstration und
+      nicht dazu gedacht wirklich auf einem System installiert zu
+      werden.
+
+   e. Sie können EFASS mit './efass <dateiname>' aufrufen.
+
+
+1 Konfigurationsmöglichkeiten
+
+   a. USE-VDM-FALLBACK-TO-PREPROC in Mkfile.in kann auf 'true'
+      gesetzt werden, um auf die bereits von den VDMTools 
+      bearbeiteten VDM-SL Module in ./preproc/ zurückzugreifen.
+
+   b. Logos usw. können in ./doc/config.tex verändert werden.
+      Dort kann auch die Darstellung  der Statusabschnitte im
+      Dokument geregelt werden.
+
+   c. 'draft' als Parameter zur \documentclass aktiviert den LaTeX
+      Draft mode (Balken am Rande für überstehenden Text).
+
+
+
+
+
+

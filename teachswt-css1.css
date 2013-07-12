@@ -1,0 +1,132 @@
+
+.body      { background-color:#D7D7D7;  
+             color: black; 
+             font-family:Arial,Helvetica;
+             font-weight:bold;
+             margin-top:30px;
+             margin-right:1em;
+           }
+
+
+a:link     { font-weight:bold; color:#0000E0; text-decoration:none}
+a:visited  { font-weight:bold; color:#000080; text-decoration:none }
+a:hover    { font-weight:bold; color:#C00000; text-decoration:underline }
+
+a:active   { font-weight:bold; color:#D7D7D7; background-color:#0000E0; 
+             text-decoration:none }
+a:focus    { font-weight:bold; color:#D7D7D7; background-color:#0000E0; 
+             text-decoration:none }
+
+.teachswt-logo     
+           { float:left;margin:0;padding:0;padding-left:1em; margin-right:2em;
+           }
+
+h1         { font-size:140%;text-decoration:underline; margin-bottom:30px;font-weight:bold;  }
+h2         { font-size:100%;text-decoration:underline; margin-bottom:10px;font-weight:bold; }
+
+h3         { font-size:100%;text-decoration:none; margin-bottom:10px;font-weight:bold; }
+
+h4         { font-size:100%;text-decoration:none; margin-bottom:10px;font-weight:bold; }
+
+
+em         { font-weight:bold; font-style:italic; font-family:serif;}
+tt         { font-weight:normal; font-size:150%; font-family:monospace;}
+
+
+.main-area { margin-left:103px;
+             margin-right:0px;
+           }
+
+.main-text { font-size:100%;
+             line-height:125%;
+             margin-right:2em;
+             margin-bottom:40px;
+           }
+
+.footnotes { font-size:80%;
+             line-height:150%;
+             margin-top:3em;
+           }
+
+
+.menu-area { margin-left:1em;
+             padding:1em;
+             padding-right:1em;
+             border: thin solid blue;
+             float:right;
+             margin-bottom:1em;
+           }
+
+
+.menu-leaf { }
+
+.menu-active 
+           { }
+
+.sub-menu  { margin-left:1em;
+             margin-top:1em;
+             margin-bottom:1em;
+           }
+
+.submenu-active 
+           { }
+
+
+.menu-spacer
+           { height: 0.5em;
+
+           }
+
+.head-line { font-size:140%; text-decoration:underline; }
+.p-small   { font-size:80%; margin-top:20px; margin-bottom:0px; }
+
+.sep       { background-color:#c0c0c0;
+                   min-height:2px;
+           }
+
+.sep-footer       
+           { background-color:#c0c0c0;
+             min-height:2px;
+             margin-top:2em;
+           }
+
+.footer       { clear:both;bottom:10px;margin-left:1em; }
+.table-footer { width:100%; margin-bottom:1em; }
+
+.td-logo   { vertical-align:bottom;
+             width:1em;
+             padding-right:1em;
+           }
+
+.td-kontakt{ vertical-align:bottom; 
+             text-align:right; 
+             padding-left:1em; 
+           }
+
+.td-company{ vertical-align:top; 
+              horizontal-align:left;
+              padding-top:1em;
+              font-size:100%;
+              font-style:roman;
+              font-weight:bold;
+              font-variant:small-caps;
+              font-family:serif;
+              letter-spacing:0.15em; 
+           }
+
+.service-of-blurb
+            { font-size:75%;
+              font-weight:bold;
+              font-family:Arial,Helvetica;
+              font-weight:bold;
+              letter-spacing:0.15em; 
+              line-height:150%;
+           }
+
+
+
+.if-no-css1 { display:none ; background-color: red; }
+
+.company-name     { font-size:200%; }
+.company-subtitle { }
+

@@ -1,0 +1,221 @@
+<!DOCTYPE 
+ HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+             "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+
+<title>TeachSWT: Feinentwurf</title>
+<link rel="stylesheet" type="text/css" href="teachswt-switch.css" />
+</head>
+
+<body class="body" bgcolor="#D7D7D7">
+
+<img class="teachswt-logo" src="teachswt-logo-full-details.jpg" border="0">
+<font size="+5" class="if-no-css1">&nbsp;&nbsp;TeachSWT 2002&nbsp;&nbsp;</font>
+
+
+<!-- MENU ------------------------------------------------ -->
+
+<p class="if-no-css1">
+</p>
+<div class="menu-area">
+  <div class="menu-leaf">
+       <a href="index.html">Zur Startseite</a></div>
+  <div class="menu-spacer"></div>
+  <p class="if-no-css1">
+  </p>
+  <div class="menu-leaf submenu-titel submenu-active">
+       <a href="material.html">Lehrmaterial</a></div>
+  <p class="if-no-css1">
+  </p>
+  <div class="sub-menu">
+    <div class="menu-leaf"><span class="if-no-css1">&nbsp;&nbsp;->&nbsp;</span>
+         <a href="material.html">Übersicht</a></div>
+    <div class="menu-leaf"><span class="if-no-css1">&nbsp;&nbsp;->&nbsp;</span>
+         <a href="vorbereitung.html">Vorbereitungsphase</a></div>
+    <div class="menu-leaf"><span class="if-no-css1">&nbsp;&nbsp;->&nbsp;</span>
+         <a href="runde-1bis4.html">Modellierung</a></div>
+    <div class="menu-leaf"><span class="if-no-css1">&nbsp;&nbsp;->&nbsp;</span>
+         <a href="runde-5.html">Feinentwurf</a></div>
+    <div class="menu-leaf"><span class="if-no-css1">&nbsp;&nbsp;->&nbsp;</span>
+         <a href="runde-6+7.html">Objektorientierung</a></div>
+    <div class="menu-leaf menu-active"><span class="if-no-css1">&nbsp;&nbsp;->&nbsp;</span>
+         <a href="runde-8.html">Strukturierte Analyse</a></div>
+
+    <div class="menu-leaf"><span class="if-no-css1">&nbsp;&nbsp;->&nbsp;</span>
+         <a href="weiteres-material.html">Weiteres Material</a></div>    
+
+    <div class="menu-leaf"><span class="if-no-css1">&nbsp;&nbsp;->&nbsp;</span>
+         <a href="efass.html">EFASS</a></div>
+
+    <div class="menu-spacer"></div>
+
+    <div class="menu-leaf"><span class="if-no-css1">&nbsp;&nbsp;->&nbsp;</span>
+         <a href="deckblaetter.html">Deckblätter</a></div>
+
+    <div class="menu-leaf"><span class="if-no-css1">&nbsp;&nbsp;->&nbsp;</span>
+         <a href="lizenz.html">Lizenz/Rechte</a></div>
+
+  
+  </div>
+  <div class="menu-spacer"></div>
+  <p class="if-no-css1">
+  </p>
+  <div class="menu-leaf">
+       <a href="http://www.m-e-leypold.de/kontakt.html">Kontakt</a></div>
+  <div class="menu-leaf">
+       <a href="http://www.m-e-leypold.de/impressum.html">Impressum</a></div>
+</div>
+
+<p class="if-no-css1">
+   <hr class="if-no-css1">
+</p>
+
+
+<!-- /MENU ------------------------------------------------ -->
+
+
+
+<div class="main-area" >
+  <div class="main-text" ><p>&nbsp;</p>
+
+
+  <h1>Runde 5: Feinentwurf</h1>
+
+
+  Die Runden 1 bis 4 haben sich mit der Beschreibung einzelner
+  Systemteile beschäftigt. Das Thema von Runde 5 ist der Fein-Entwurf,
+  das heisst, zum einen die Zusammensetzung eines Systems aus vielen
+  Teilen, zum anderen reden wir hier bereits von Teilen der
+  Implementation (Module). Die Methode, durch die sich die
+  Lösungsskizze auszeichnet, ist die Komposition des Systems aus
+  abstrakten Datentypen.
+
+  Als Beispiel dient ein Disassembler für einen
+  8-Bit-Mikroprozessor. Ein System dieser Größenordnung vollständig
+  mit formalen Methoden zu beschreiben, ist zum einen ein großer
+  Aufwand, zum anderen wahrscheinlich auch Overkill. Stattdessen
+  wird in Runde 5 die Spezifikation von Modulen in natürlicher Sprache
+  propagiert ­- wobei man sich, um vollständig zu sein und eine gewisse
+  Präzision zu erhalten am Geist der formalen "Spezifikation"
+  orientieren sollte, d. h. Eingabe, Zustände und Ausgabe im Auge
+  behalten und Operationen um (abstrakte) Datentypen gruppieren
+  sollte. Hier wird auch das Thema von Ressource-Referenzen wieder
+  aufgenommen in Form der Frage nach den Verantwortlichkeiten für
+  Speicher, auf den Zeiger zeigen, die Modulgrenzen überqueren. Da in
+  dieser Runde Module als Systemteile in Erscheinung treten, werden
+  hier nochmals die Fragen der modularen Programmierung in C/C++
+  berührt (u. a. in der Lösungsskizze die Kapselung der Implementation
+  in eine idealerweise opaken Typdefinition).
+
+
+  <ul>
+  <li> Handout <em>Das EVA-Paradigma</em>: 
+       <a href="eva-paradigma.pdf">
+       Als PDF</a>,
+       <a href="eva-paradigma.ps.gz">
+       als komprimierte Postscriptdatei</a>.</li>
+  <li> Handout <em>Beschreibung von Modulen in natürliche Sprache</em>: 
+       <a href="module-description.pdf">
+       Als PDF</a>,
+       <a href="module-description.ps.gz">
+       als komprimierte Postscriptdatei</a>.</li>
+  <li> Übungsblatt <em>Entwurf eines Disassemblers</em>
+       <a href="uebung-05.pdf">
+       Als PDF</a>,
+       <a href="uebung-05.ps.gz">
+       als komprimierte Postscriptdatei</a>.</li>
+  <li> Lösungen: 
+       <a href="loesung-05.pdf">
+       Als PDF</a>,
+       <a href="loesung-05.ps.gz">
+       als komprimierte Postscriptdatei</a>.</li>
+  <li> Quelltext zur Lösung (<em>Disassembler-Headerdateien</em>):  
+       <a href="disas65-2002-10-22-a.tgz">
+       disas65-2002-10-22-a.tgz</a> (komprimiertes Tape-Archiv).</li>
+  </ul>
+
+
+
+  </div>
+
+  <div style="clear:both"></div>
+
+  <div class="sep"></div>
+
+</div>
+
+<p class="if-no-css1">
+   &nbsp;
+   <hr class="if-no-css1">
+</p>
+
+<div class="footer" > 
+
+  <table class="table-footer" width="100%"> <!-- ----------------------------------------- -->
+  <tr>
+    <td class="td-logo"> <img src="blue-sun-gray-sky.jpg" border="0"/></td>
+
+    <td class="td-company" valign=top>
+    <b>
+       <span class="if-no-css1">&nbsp;&nbsp;&nbsp;</span>
+       <span class="service-of-blurb"> 
+       Diese Seiten sind eine Dienstleistung von
+       </span><br>
+       <span class="if-no-css1">&nbsp;&nbsp;&nbsp;</span>
+       <span class="company-name">M. E. Leypold</span><span class="if-no-css1">,</span>
+       <br>
+       <span class="if-no-css1">&nbsp;&nbsp;&nbsp;</span>
+       <span class="company-subtitle">Software-Dienstleistungen & 
+                                      Beratung</span></b><span class="if-no-css1">,</span>
+       <br>
+       <span class="if-no-css1">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+       <span class="service-of-blurb"> 
+       <a href="http://www.m-e-leypold.de"
+         >www.m-e-leypold.de</a><span class="if-no-css1">.</span>
+       </span><br>
+    </td>
+
+
+ 
+    <td class="td-kontakt" valign=bottom> 
+       <span class="if-no-css1">&nbsp;&nbsp;&nbsp;</span>
+       <a href="http://www.m-e-leypold.de/kontakt.html">   Kontakt   </a></td>
+    <td class="td-kontakt" valign=bottom> 
+       <span class="if-no-css1">&nbsp;&nbsp;&nbsp;</span>
+       <a href="http://www.m-e-leypold.de/impressum.html"> Impressum </a></td>
+
+  </tr></table> <!-- -------------------------------------------------------- -->
+
+  <div class="sep"></div>
+
+</div></div>
+
+
+
+<div class="if-no-css1">
+   <p></p><hr><p></p>
+
+
+   <font color="darkred"><b>
+         Ihr Web-Browser unterstützt keine Stylesheets:
+   </b></font>
+   <font color="blue">
+     Der Web-Browser, den Sie verwenden, unterstützt CSS1-Stylesheets
+     leider nur unvollständig. Sie sehen deshalb ein stark
+     vereinfachtes Layout dieser Seite(n). Wenn Sie das ursprünglich
+     von uns beabsichtigte übersichtlicher und ästhetischere Layout
+     genießen möchten, könnten Sie in Erwägung ziehen, einen neueren
+     Browser zu verwenden.
+     --
+     Informationen zu CSS1-kompatiblen Web-Browsern finden Sie bei der
+     <a href="http://www.webstandards.org/upgrade/">Upgrade-Initiative
+     des Web-Standards-Projektes</a>.
+     E5/Mac, IE6/Windows, Netscape6, and Opera5 (und höher) sowie
+     Mozilla oder Firefox sollten alle CSS1-kompatibel sein.
+   </font>
+
+</div>
+
+
+</body>
+</html>

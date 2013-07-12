@@ -1,0 +1,41 @@
+
+-*- mode: text -*-
+
+ Welcome to the mklib package.
+
+
+ The files are released under the terms of the GPL (see
+ LICENSE.txt). This is a preliminary release (File headers are missing
+ and so on), so please refrain from spreading the files if you
+ can. You may distribute them, but I'd prefer you'd wait for a better
+ release which should come soon.
+
+                               Tuebingen, Sep 2002 -- M E Leypold
+
+
+                        _.oOo._
+
+
+ Installation
+ ------------
+
+    * unpack the tarball.
+
+    * cd into the source tree.
+
+    * type './configure', 'make', 'make install'.
+    
+    * the files will install to 
+
+      $HOME/testing/$(hostname -s)/[bin|lib/mklib2].
+      
+      You might override that with parameters 'prefix=...',
+      'libdir=...'  and 'bindir=...' to 'make install'.
+
+    * 'configure' doesn't understand any parameters yet (no, I won't
+      take autoconf !), but you can have seperate source and build
+      directories. 'configure' will look, where it itself is, and
+      assume that is the source directory.
+
+
+   That's all here. As I said: Only a preliminary release.

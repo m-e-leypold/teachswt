@@ -1,0 +1,104 @@
+ -*- mode: text -*-
+
+
+ Welcome to the teachswt-tue-2002 package.
+
+ This package is a tarball, which contains the document sources (and
+ the associated makefiles and scripts to build them) for the
+ 'exercises in software engineering' in summer 2002 at the University
+ of Tuebingen.
+
+ The documents are released to the public under the terms of the "Free
+ Documentation License", the associated build scripts and the sample
+ code are released to the public under the terms of the "Gnu Public
+ License". Please refer to the accompanying files
+ LICENSE-DOCUMENTS.txt, LICENSE-PROGRAMS.txt and status.* for details
+ and license terms. There we also try to clarify some details (in
+ status.*) how we want the license to be applied to this product.
+
+                               Tuebingen, Dez 2002 -- M E Leypold
+
+                          ***
+
+ The rest of the documentation is in German, as are the documents
+ themselves.
+
+                        _.oOo._
+
+
+
+ 0 Kurzanleitung zur Generierung der Dokumente
+   -------------------------------------------
+
+   0. 'teachswt' ist nach der Philosphie eines Softwarepaketes
+      gestaltet: Es gibt Dokumentquellen und der Übersetzungsprozess
+      generiert daraus die Dokumente in PostScript und PDF.
+
+   a. Sie benötigen (zur Zeit noch) die Makefilebibliothek 'mklib' um
+      die Dokumente in 'teachswt' übersetzen zu können. Besorgen Sie
+      sich diese Software und installieren Sie diese auf Ihrem Rechner
+      oder in Ihrem Account. Ausserdem benötigen Sie 'Gnu Make' für
+      'mklib'.
+
+   b. Setzen Sie das Build-Verzeichnis auf: ENTWEDER Sie gehen in das
+      Quelltextverzeichnis und geben ./configure ein, ODER Sie
+      erzeugen eine neues Verzeichnis, gehen in dieses und rufen
+      'configure' mit dem Pfad des Quellverzeichnisses auf: <Pfad zum
+      Quellverzeichnis>/configure.
+
+   c. Geben Sie 'mk' ein (dies ist der GNU Make wrapper aus 'mklib').
+   
+   d. "trennseiten.ps" enthält 'Titelseiten' für das gesamte Werk und
+      jeweils für die einzelnen Abschnitte. Sie können damit einen
+      Reader zusammenstellen und binden. Die Titelseite ist doppelt
+      vorhanden: Einmal in status.ps und einmal in trennseiten.ps.
+
+
+
+ 1 Eine kurze Übersicht über die Verzeichnisse
+   -------------------------------------------
+
+   * essays/      Konzeptpapiere und Metdokumente
+
+   * handouts/    Übungen, Handouts, Lösungsskizzen
+
+   * parts/       ausgelagerte Dokumententeile
+
+   * figs/        Illustrationen
+
+   * slides/      Folien (nur von historischem Interesse :-)
+
+   * org/         Aushänge (nur von historischem Interesse)
+
+   * src/         Diverse Beipiele im Quelltext
+
+   * artefacts/   Versionen früherer Übungsblätter, Quelltextreleases
+                  und Tarballs.
+
+   * etc/         Konfigurationen
+
+   * styles/      LaTeX makros (Leypold's LaTeX Hacks)
+
+   * scripts/     Diverse nützliche Skripten für Release und Wartung.
+
+
+
+
+2 Konfigurationsmöglichkeiten
+
+   a. USE-VDM-FALLBACK-TO-PREPROC in Mkfile.in kann auf 'true'
+      gesetzt werden, um auf die bereits von den VDMTools 
+      bearbeiteten VDM-SL Module in ./preproc/ zurückzugreifen.
+
+   b. Logos usw. können in ./etc/*.tex verändert werden.
+      Dort kann auch die Darstellung  der Statusabschnitte im
+      Dokument geregelt werden.
+
+   c. 'draft' als Parameter zur \documentclass aktiviert den LaTeX
+      Draft mode (Balken am Rande für überstehenden Text). Dies muss
+      in jedem Dokuement einzeln geregelt werden.
+
+
+
+
+

@@ -1,0 +1,23 @@
+
+
+ TeachSWT -- Materialien zur Softwaretechnik
+             Release: TeachSWT-tue-2002-rc1
+             (Releasekanditat 1 für das endgültige Release)
+
+ ----------------------------
+
+ mklib-*.tar.gz   -> Mklib Make-Bibliothek und -Tools.
+ swt2002-*.tar.gz -> Dokumente: Übersetzungssystem und Quellen.
+ efass*.tar.gz    -> EFASS Editor, Fallstudie.
+ *.ps.gz, *.pdf   -> Dokumente als Postcript und PDF.
+ 
+ diverse *.tgz    -> Quelltexte für Demonstrationszwecke,
+                     auch im Quellbaum von swt2002.
+ 
+ Lizenzen und Rechte, siehe Inhalt der einzelnen Archive.
+
+                  Dez 2002 -- M E Leypold
+
+
+
+ 

@@ -1,0 +1,353 @@
+<!DOCTYPE 
+ HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+             "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+
+<title>TeachSWT: Modellierung</title>
+<link rel="stylesheet" type="text/css" href="teachswt-switch.css" />
+</head>
+
+<body class="body" bgcolor="#D7D7D7">
+
+<img class="teachswt-logo" src="teachswt-logo-full-details.jpg" border="0">
+<font size="+5" class="if-no-css1">&nbsp;&nbsp;TeachSWT 2002&nbsp;&nbsp;</font>
+
+
+<!-- MENU ------------------------------------------------ -->
+
+<p class="if-no-css1">
+</p>
+<div class="menu-area">
+  <div class="menu-leaf">
+       <a href="index.html">Zur Startseite</a></div>
+  <div class="menu-spacer"></div>
+  <p class="if-no-css1">
+  </p>
+  <div class="menu-leaf submenu-titel submenu-active">
+       <a href="material.html">Lehrmaterial</a></div>
+  <p class="if-no-css1">
+  </p>
+  <div class="sub-menu">
+    <div class="menu-leaf"><span class="if-no-css1">&nbsp;&nbsp;->&nbsp;</span>
+         <a href="material.html">Übersicht</a></div>
+    <div class="menu-leaf"><span class="if-no-css1">&nbsp;&nbsp;->&nbsp;</span>
+         <a href="vorbereitung.html">Vorbereitungsphase</a></div>
+    <div class="menu-leaf"><span class="if-no-css1">&nbsp;&nbsp;->&nbsp;</span>
+         <a href="runde-1bis4.html">Modellierung</a></div>
+    <div class="menu-leaf"><span class="if-no-css1">&nbsp;&nbsp;->&nbsp;</span>
+         <a href="runde-5.html">Feinentwurf</a></div>
+    <div class="menu-leaf"><span class="if-no-css1">&nbsp;&nbsp;->&nbsp;</span>
+         <a href="runde-6+7.html">Objektorientierung</a></div>
+    <div class="menu-leaf menu-active"><span class="if-no-css1">&nbsp;&nbsp;->&nbsp;</span>
+         <a href="runde-8.html">Strukturierte Analyse</a></div>
+
+    <div class="menu-leaf"><span class="if-no-css1">&nbsp;&nbsp;->&nbsp;</span>
+         <a href="weiteres-material.html">Weiteres Material</a></div>    
+
+    <div class="menu-leaf"><span class="if-no-css1">&nbsp;&nbsp;->&nbsp;</span>
+         <a href="efass.html">EFASS</a></div>
+
+    <div class="menu-spacer"></div>
+
+    <div class="menu-leaf"><span class="if-no-css1">&nbsp;&nbsp;->&nbsp;</span>
+         <a href="deckblaetter.html">Deckblätter</a></div>
+
+    <div class="menu-leaf"><span class="if-no-css1">&nbsp;&nbsp;->&nbsp;</span>
+         <a href="lizenz.html">Lizenz/Rechte</a></div>
+
+  
+  </div>
+  <div class="menu-spacer"></div>
+  <p class="if-no-css1">
+  </p>
+  <div class="menu-leaf">
+       <a href="http://www.m-e-leypold.de/kontakt.html">Kontakt</a></div>
+  <div class="menu-leaf">
+       <a href="http://www.m-e-leypold.de/impressum.html">Impressum</a></div>
+</div>
+
+<p class="if-no-css1">
+   <hr class="if-no-css1">
+</p>
+
+
+<!-- /MENU ------------------------------------------------ -->
+
+
+<div class="main-area" >
+  <div class="main-text" ><p>&nbsp;</p>
+
+
+  <h1>Runden 1 bis 4: Systembegriff und modellbasierte Spezifikation</h1>
+
+  Die Runden 1 bis 4 der Übungen beschäftigen sich mit der
+  Beschreibung und Implementation von Systemen und
+  Systemteilen. Zentral ist dabei der Gedanke, dass Systemteile
+  (möglicherweise) Zustand enthalten und es zu einer vollständigen
+  Charakterisierung der Systeme genügt, Einflüsse und Reaktionen im
+  Auge zu behalten, die die Systemgrenze überqueren<sup><a
+  href="#fn4">4</a></sup>, mit einem Wort: Ein- und Ausgaben. Um ein
+  System oder ein Subsystem (einen Systemteil) zu beschreiben, genügt
+  es, seine "Antwortfunktion" zu nennen - d. h. wie sich der Zustand
+  als Resultat einer Eingabe ändert, und welche Ausgabe dabei
+  produziert wird.
+
+  <h2>Runde 1: Ein einfaches Modell in VDM-SL</h2>
+
+  Dies ist im Wesentlichen das Thema von Runde 1, ausgeführt an
+  einfachen Beispielen: Einem assoziativen Array und einem
+  FIFO. Traditionell zerfallen die Verfahren, mit denen die Reaktion
+  eines Systems beschrieben werden kann, in 2 Klassen: Die
+  algebraischen Spezifikationsverfahren (z. B. Larch),
+  charakterisieren nur das algebraische Verhältnis der Operationen
+  untereinander<sup><a href="#fn5">5</a></sup>,
+  während in den modellorientierten Verfahren (wie
+  VDM-SL oder Z) explizit die Wertemengen des Zustandes und der Ein-
+  und Ausgabe konstruiert werden. Runde 1 führt VDM-SL als
+  Spezifikationssprache ein. (Im Folgenden wird diese Wertemenge
+  zuweilen als Datenmodell ­- in Unterscheidung von der Spezifikation
+  der Operationen bezeichnet.)
+
+  <ul>
+  <li> Handout <em>VDM-SL-Beispiele aus dem Editor EFASS</em>: 
+       <a href="example-vdm-spec.vdm.pdf">
+       Als PDF</a>,
+       <a href="example-vdm-spec.vdm.ps.gz">
+       als komprimierte Postscriptdatei</a>.</li>
+  <li> Handout <em>Spezifikation eines assoziativen Arrays in VDM-SL</em>: 
+       <a href="example-vdm-spec.vdm.pdf">
+       Als PDF</a>,
+       <a href="example-vdm-spec.vdm.ps.gz">
+       als komprimierte Postscriptdatei</a>.</li>
+  <li> Übungsblatt <em>Spezifikation eines FiFo in VDM-SL</em>: 
+       <a href="uebung-01.pdf">
+       Als PDF</a>,
+       <a href="uebung-01.ps.gz">
+       als komprimierte Postscriptdatei</a>.</li>
+  <li> Quelltext zur Aufgabenstellung (<em>Queue in Modula</em>):  
+       <a href="PrintQueue-2002-05-08.tgz">
+       PrintQueue-2002-05-08.tgz</a> (komprimiertes Tape-Archive).</li>
+  <li> Lösungsskizze: 
+       <a href="loesung-01.vdm.pdf">
+       Als PDF</a>,
+       <a href="loesung-01.vdm.ps.gz">
+       als komprimierte Postscriptdatei</a>.</li>
+  </ul>
+
+
+  <h2>Runde 2: Verhältnis von Spezifikation zu Implementation</h2>
+
+  Modellbasierte Spezifikationssprachen treffen ihre Aussagen in Form
+  einer Analogie: Das beschriebene System verhält sich so wie das
+  Modell, wenn bestimmte Entsprechungen angenommen werden zwischen den
+  Zuständen des Modells und denen des beschriebenen Systems. Die
+  Entsprechung wird hergestellt durch eine (bezüglich der Operationen
+  homomorphe) Abbildung zwischen Modellen und beschriebenem System ­-
+  der <em>Retrieve-Funktion</em>. Diese muss bestimmte Eigenschaften haben. Die
+  Entsprechung zwischen Modell und Implementation, die Beschreibung
+  von Modulen (Implementationseinheiten) durch Schnittstellen, sowie
+  modulare Programmierung in C/C++ sind die Themen von Runde 2.
+
+
+  <ul>
+  <li> Handout <em>Module und Namensräume</em>: 
+       <a href="modules-and-namespaces.pdf">
+       Als PDF</a>,
+       <a href="modules-and-namespaces.ps.gz">
+       als komprimierte Postscriptdatei</a>.</li>
+  <li> Handout <em>Von der Spezifikation zur Implementation</em>: 
+       <a href="example-specification-to-implementation.vdm.pdf">
+       Als PDF</a>,
+       <a href="example-specification-to-implementation.vdm.ps.gz">
+       als komprimierte Postscriptdatei</a>.</li>
+  <li> Übungsblatt <em>Implementation eines FiFo</em>
+       <a href="uebung-02.pdf">
+       Als PDF</a>,
+       <a href="uebung-02.ps.gz">
+       als komprimierte Postscriptdatei</a>.</li>
+  <li> Lösungen: 
+       <a href="loesung-02.vdm.pdf">
+       Als PDF</a>,
+       <a href="loesung-02.vdm.ps.gz">
+       als komprimierte Postscriptdatei</a>.</li>
+  <li> Quelltext zur Lösung (<em>FiFo-Implementation</em>):  
+       <a href="FiFo-2002-08-26.tgz">
+       FiFo-2002-08-26.tgz(komprimiertes Tape-Archive)</a>.</li>
+  </ul>
+
+
+
+  <h2>Runde 3: Speicher, Zustand und funktionale Spezifikation</h2>
+
+  Runde 3 spricht schließlich die Behandlung von Speicher
+  (allgemeiner: Referenzen auf zustandsbehaftete Resourcen) und von
+  Seiteneffekten in den modellbasierten Spezifikationsverfahren
+  an<sup><a href="#fn6">6</a></sup>.
+
+  Dazu gehören
+  auch Ausführungen über den Zusammenhang zwischen der Signatur von
+  Operationen, und der Schnittstelle von Prozeduren, welche die 
+  Operationen implementieren. Es wird dargelegt, dass bestehenden
+  Freiheiten vor allem in der Festlegung der Speicherstrategie
+  (Pass-by-Value versus Pass-by-Reference) liegen, und wie
+  objektorientierte Methodenaufrufe dazu in Bezug zu setzen sind. Für
+  die Aufgaben der Runden 1 und 2 wurde bewusst ein sehr einfaches
+  Beispiel ausgewählt, damit sich die Teilnehmer auf das Erlernen
+  von VDM-SL und grundlegender Elemente der modellbasierten
+  Spezifikation konzentrieren können. Runde 3 führt das erste
+  nichttriviale Beispiel modellbasierter Spezifikation ein: einen
+  Heap. Dieser kann stellvertretend für eine ganze Anzahl ähnlicher
+  Strukturen gesehen werden (Datenbank, Dateisystem, assoziatives
+  Array ), denen allen gemeinsam ist, dass Daten darin abgelegt
+  werden, und Schlüssel (Referenzen!) zur Wiedererlangung der
+  gespeicherten Daten verwendet werden müssen.
+
+
+  <ul>
+  <li> Handout <em>Spezifikation durch Funktionen und die Behandlung von Speicher</em>: 
+       <a href="funktionale-spec-und-speicher.vdm.pdf">
+       Als PDF</a>,
+       <a href="funktionale-spec-und-speicher.vdm.ps.gz">
+       als komprimierte Postscriptdatei</a>.</li>
+  <li> Übungsblatt <em>Modellierung eines Heap in VDM-SL</em>
+       <a href="uebung-03.pdf">
+       Als PDF</a>,
+       <a href="uebung-03.ps.gz">
+       als komprimierte Postscriptdatei</a>.</li>
+  <li> Lösungen: 
+       <a href="loesung-03.vdm.pdf">
+       Als PDF</a>,
+       <a href="loesung-03.vdm.ps.gz">
+       als komprimierte Postscriptdatei</a>.</li>
+  </ul>
+
+  <h2>Runde 4: Ein fortgeschrittenes Modell und einige Fingerübungen</h2>
+
+  Runde 4 schließlich beschließt den Reigen der VDM-SL-Themen mit
+  einer Aufgabe (Nachbarschaft von Theatersitzen und die Allokation
+  zusammenhängender Sitzgruppen) die praktisch nur lösbar ist, wenn
+  man jeden Versuch, an die Darstellung für Implementationszwecke
+  (Listen, Array, was auch immer) zu denken, vollständig aufgibt und
+  über die Topologie der Aufstellung der Theatersitze abstrahiert. Die
+  Runden 1 bis 4 haben im Wesentlichen modellbasiertes Spezifizieren
+  zum Thema (Das ist hier die Antwort auf: Wie spezifiziert man
+  Systemteile?). Thematisch darin eingebettet sind jeweils Exkurse zum
+  modularen Programmieren (Runde 2), u.a. auch Erläuterungen über die
+  Namensräume von Modulen und eine Aufgabe zu Make - dem bekannten
+  Werkzeug zur modulweisen inkrementellen Übersetzung (Runde 4). Mit
+  Runde 4 sind die VDM-SL-Aufgaben jedoch abgeschlossen. 
+
+
+  <ul>
+  <li> Übungsblatt <em>Theatersitze, Make</em>
+       <a href="uebung-04.pdf">
+       Als PDF</a>,
+       <a href="uebung-04.ps.gz">
+       als komprimierte Postscriptdatei</a>.</li>
+  <li> Lösungen: 
+       <a href="loesung-04.vdm.pdf">
+       Als PDF</a>,
+       <a href="loesung-04.vdm.ps.gz">
+       als komprimierte Postscriptdatei</a>.</li>
+  <li> Quelltext zur Lösung (<em>FiFo-Implementation</em>):  
+       <a href="FiFo-2002-08-26.tgz">
+       FiFo-2002-08-26.tgz</a> (komprimiertes Tape-Archive).</li>
+  </ul>
+
+  <div class="footnotes">
+
+
+    <p><sup><a name="fn4">[4]</a></sup> Genau dieses ist eben die
+    Essenz des Systemgedankens, nämlich, dass es möglich sei, einen
+    Teil der Welt abzugrenzen, so dass man sich auf die Systemgrenzen
+    konzentrieren und über den Systeminhalt abstrahieren kann.</p>
+
+    <p><sup><a name="fn5">[5]</a></sup> Daraus können dann auch geeignete
+    Trägermengen konstruiert werden.</p>
+
+    <p><sup><a name="fn6">[6]</a></sup> Nicht alles ist eine Funktion, aber
+    alles kann durch eine Funktion beschrieben werden. :-)</p>
+
+  </div>
+
+  <div style="clear:both"></div>
+
+  <div class="sep"></div>
+
+</div>
+
+<p class="if-no-css1">
+   &nbsp;
+   <hr class="if-no-css1">
+</p>
+
+<div class="footer" > 
+
+  <table class="table-footer" width="100%"> <!-- ----------------------------------------- -->
+  <tr>
+    <td class="td-logo"> <img src="blue-sun-gray-sky.jpg" border="0"/></td>
+
+    <td class="td-company" valign=top>
+    <b>
+       <span class="if-no-css1">&nbsp;&nbsp;&nbsp;</span>
+       <span class="service-of-blurb"> 
+       Diese Seiten sind eine Dienstleistung von
+       </span><br>
+       <span class="if-no-css1">&nbsp;&nbsp;&nbsp;</span>
+       <span class="company-name">M. E. Leypold</span><span class="if-no-css1">,</span>
+       <br>
+       <span class="if-no-css1">&nbsp;&nbsp;&nbsp;</span>
+       <span class="company-subtitle">Software-Dienstleistungen & 
+                                      Beratung</span></b><span class="if-no-css1">,</span>
+       <br>
+       <span class="if-no-css1">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+       <span class="service-of-blurb"> 
+       <a href="http://www.m-e-leypold.de"
+         >www.m-e-leypold.de</a><span class="if-no-css1">.</span>
+       </span><br>
+    </td>
+
+
+ 
+    <td class="td-kontakt" valign=bottom> 
+       <span class="if-no-css1">&nbsp;&nbsp;&nbsp;</span>
+       <a href="http://www.m-e-leypold.de/kontakt.html">   Kontakt   </a></td>
+    <td class="td-kontakt" valign=bottom> 
+       <span class="if-no-css1">&nbsp;&nbsp;&nbsp;</span>
+       <a href="http://www.m-e-leypold.de/impressum.html"> Impressum </a></td>
+
+  </tr></table> <!-- -------------------------------------------------------- -->
+
+  <div class="sep"></div>
+
+</div></div>
+
+
+
+<div class="if-no-css1">
+   <p></p><hr><p></p>
+
+
+   <font color="darkred"><b>
+         Ihr Web-Browser unterstützt keine Stylesheets:
+   </b></font>
+   <font color="blue">
+     Der Web-Browser, den Sie verwenden, unterstützt CSS1-Stylesheets
+     leider nur unvollständig. Sie sehen deshalb ein stark
+     vereinfachtes Layout dieser Seite(n). Wenn Sie das ursprünglich
+     von uns beabsichtigte übersichtlicher und ästhetischere Layout
+     genießen möchten, könnten Sie in Erwägung ziehen, einen neueren
+     Browser zu verwenden.
+     --
+     Informationen zu CSS1-kompatiblen Web-Browsern finden Sie bei der
+     <a href="http://www.webstandards.org/upgrade/">Upgrade-Initiative
+     des Web-Standards-Projektes</a>.
+     E5/Mac, IE6/Windows, Netscape6, and Opera5 (und höher) sowie
+     Mozilla oder Firefox sollten alle CSS1-kompatibel sein.
+   </font>
+
+</div>
+
+
+</body>
+</html>
