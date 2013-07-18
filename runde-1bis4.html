@@ -29,7 +29,7 @@
   </p>
   <div class="sub-menu">
     <div class="menu-leaf"><span class="if-no-css1">&nbsp;&nbsp;->&nbsp;</span>
-         <a href="material.html">Übersicht</a></div>
+         <a href="material.html">Ãœbersicht</a></div>
     <div class="menu-leaf"><span class="if-no-css1">&nbsp;&nbsp;->&nbsp;</span>
          <a href="vorbereitung.html">Vorbereitungsphase</a></div>
     <div class="menu-leaf"><span class="if-no-css1">&nbsp;&nbsp;->&nbsp;</span>
@@ -50,7 +50,7 @@
     <div class="menu-spacer"></div>
 
     <div class="menu-leaf"><span class="if-no-css1">&nbsp;&nbsp;->&nbsp;</span>
-         <a href="deckblaetter.html">Deckblätter</a></div>
+         <a href="deckblaetter.html">DeckblÃ¤tter</a></div>
 
     <div class="menu-leaf"><span class="if-no-css1">&nbsp;&nbsp;->&nbsp;</span>
          <a href="lizenz.html">Lizenz/Rechte</a></div>
@@ -80,32 +80,32 @@
 
   <h1>Runden 1 bis 4: Systembegriff und modellbasierte Spezifikation</h1>
 
-  Die Runden 1 bis 4 der Übungen beschäftigen sich mit der
+  Die Runden 1 bis 4 der Ãœbungen beschÃ¤ftigen sich mit der
   Beschreibung und Implementation von Systemen und
   Systemteilen. Zentral ist dabei der Gedanke, dass Systemteile
-  (möglicherweise) Zustand enthalten und es zu einer vollständigen
-  Charakterisierung der Systeme genügt, Einflüsse und Reaktionen im
-  Auge zu behalten, die die Systemgrenze überqueren<sup><a
+  (mÃ¶glicherweise) Zustand enthalten und es zu einer vollstÃ¤ndigen
+  Charakterisierung der Systeme genÃ¼gt, EinflÃ¼sse und Reaktionen im
+  Auge zu behalten, die die Systemgrenze Ã¼berqueren<sup><a
   href="#fn4">4</a></sup>, mit einem Wort: Ein- und Ausgaben. Um ein
-  System oder ein Subsystem (einen Systemteil) zu beschreiben, genügt
+  System oder ein Subsystem (einen Systemteil) zu beschreiben, genÃ¼gt
   es, seine "Antwortfunktion" zu nennen - d. h. wie sich der Zustand
-  als Resultat einer Eingabe ändert, und welche Ausgabe dabei
+  als Resultat einer Eingabe Ã¤ndert, und welche Ausgabe dabei
   produziert wird.
 
   <h2>Runde 1: Ein einfaches Modell in VDM-SL</h2>
 
-  Dies ist im Wesentlichen das Thema von Runde 1, ausgeführt an
+  Dies ist im Wesentlichen das Thema von Runde 1, ausgefÃ¼hrt an
   einfachen Beispielen: Einem assoziativen Array und einem
   FIFO. Traditionell zerfallen die Verfahren, mit denen die Reaktion
   eines Systems beschrieben werden kann, in 2 Klassen: Die
   algebraischen Spezifikationsverfahren (z. B. Larch),
-  charakterisieren nur das algebraische Verhältnis der Operationen
+  charakterisieren nur das algebraische VerhÃ¤ltnis der Operationen
   untereinander<sup><a href="#fn5">5</a></sup>,
-  während in den modellorientierten Verfahren (wie
+  wÃ¤hrend in den modellorientierten Verfahren (wie
   VDM-SL oder Z) explizit die Wertemengen des Zustandes und der Ein-
-  und Ausgabe konstruiert werden. Runde 1 führt VDM-SL als
+  und Ausgabe konstruiert werden. Runde 1 fÃ¼hrt VDM-SL als
   Spezifikationssprache ein. (Im Folgenden wird diese Wertemenge
-  zuweilen als Datenmodell ­- in Unterscheidung von der Spezifikation
+  zuweilen als Datenmodell Â­- in Unterscheidung von der Spezifikation
   der Operationen bezeichnet.)
 
   <ul>
@@ -119,7 +119,7 @@
        Als PDF</a>,
        <a href="example-vdm-spec.vdm.ps.gz">
        als komprimierte Postscriptdatei</a>.</li>
-  <li> Übungsblatt <em>Spezifikation eines FiFo in VDM-SL</em>: 
+  <li> Ãœbungsblatt <em>Spezifikation eines FiFo in VDM-SL</em>: 
        <a href="uebung-01.pdf">
        Als PDF</a>,
        <a href="uebung-01.ps.gz">
@@ -127,7 +127,7 @@
   <li> Quelltext zur Aufgabenstellung (<em>Queue in Modula</em>):  
        <a href="PrintQueue-2002-05-08.tgz">
        PrintQueue-2002-05-08.tgz</a> (komprimiertes Tape-Archive).</li>
-  <li> Lösungsskizze: 
+  <li> LÃ¶sungsskizze: 
        <a href="loesung-01.vdm.pdf">
        Als PDF</a>,
        <a href="loesung-01.vdm.ps.gz">
@@ -135,14 +135,14 @@
   </ul>
 
 
-  <h2>Runde 2: Verhältnis von Spezifikation zu Implementation</h2>
+  <h2>Runde 2: VerhÃ¤ltnis von Spezifikation zu Implementation</h2>
 
   Modellbasierte Spezifikationssprachen treffen ihre Aussagen in Form
-  einer Analogie: Das beschriebene System verhält sich so wie das
+  einer Analogie: Das beschriebene System verhÃ¤lt sich so wie das
   Modell, wenn bestimmte Entsprechungen angenommen werden zwischen den
-  Zuständen des Modells und denen des beschriebenen Systems. Die
-  Entsprechung wird hergestellt durch eine (bezüglich der Operationen
-  homomorphe) Abbildung zwischen Modellen und beschriebenem System ­-
+  ZustÃ¤nden des Modells und denen des beschriebenen Systems. Die
+  Entsprechung wird hergestellt durch eine (bezÃ¼glich der Operationen
+  homomorphe) Abbildung zwischen Modellen und beschriebenem System Â­-
   der <em>Retrieve-Funktion</em>. Diese muss bestimmte Eigenschaften haben. Die
   Entsprechung zwischen Modell und Implementation, die Beschreibung
   von Modulen (Implementationseinheiten) durch Schnittstellen, sowie
@@ -150,7 +150,7 @@
 
 
   <ul>
-  <li> Handout <em>Module und Namensräume</em>: 
+  <li> Handout <em>Module und NamensrÃ¤ume</em>: 
        <a href="modules-and-namespaces.pdf">
        Als PDF</a>,
        <a href="modules-and-namespaces.ps.gz">
@@ -160,17 +160,17 @@
        Als PDF</a>,
        <a href="example-specification-to-implementation.vdm.ps.gz">
        als komprimierte Postscriptdatei</a>.</li>
-  <li> Übungsblatt <em>Implementation eines FiFo</em>
+  <li> Ãœbungsblatt <em>Implementation eines FiFo</em>
        <a href="uebung-02.pdf">
        Als PDF</a>,
        <a href="uebung-02.ps.gz">
        als komprimierte Postscriptdatei</a>.</li>
-  <li> Lösungen: 
+  <li> LÃ¶sungen: 
        <a href="loesung-02.vdm.pdf">
        Als PDF</a>,
        <a href="loesung-02.vdm.ps.gz">
        als komprimierte Postscriptdatei</a>.</li>
-  <li> Quelltext zur Lösung (<em>FiFo-Implementation</em>):  
+  <li> Quelltext zur LÃ¶sung (<em>FiFo-Implementation</em>):  
        <a href="FiFo-2002-08-26.tgz">
        FiFo-2002-08-26.tgz(komprimiertes Tape-Archive)</a>.</li>
   </ul>
@@ -179,28 +179,28 @@
 
   <h2>Runde 3: Speicher, Zustand und funktionale Spezifikation</h2>
 
-  Runde 3 spricht schließlich die Behandlung von Speicher
+  Runde 3 spricht schlieÃŸlich die Behandlung von Speicher
   (allgemeiner: Referenzen auf zustandsbehaftete Resourcen) und von
   Seiteneffekten in den modellbasierten Spezifikationsverfahren
   an<sup><a href="#fn6">6</a></sup>.
 
-  Dazu gehören
-  auch Ausführungen über den Zusammenhang zwischen der Signatur von
+  Dazu gehÃ¶ren
+  auch AusfÃ¼hrungen Ã¼ber den Zusammenhang zwischen der Signatur von
   Operationen, und der Schnittstelle von Prozeduren, welche die 
   Operationen implementieren. Es wird dargelegt, dass bestehenden
   Freiheiten vor allem in der Festlegung der Speicherstrategie
   (Pass-by-Value versus Pass-by-Reference) liegen, und wie
-  objektorientierte Methodenaufrufe dazu in Bezug zu setzen sind. Für
+  objektorientierte Methodenaufrufe dazu in Bezug zu setzen sind. FÃ¼r
   die Aufgaben der Runden 1 und 2 wurde bewusst ein sehr einfaches
-  Beispiel ausgewählt, damit sich die Teilnehmer auf das Erlernen
+  Beispiel ausgewÃ¤hlt, damit sich die Teilnehmer auf das Erlernen
   von VDM-SL und grundlegender Elemente der modellbasierten
-  Spezifikation konzentrieren können. Runde 3 führt das erste
+  Spezifikation konzentrieren kÃ¶nnen. Runde 3 fÃ¼hrt das erste
   nichttriviale Beispiel modellbasierter Spezifikation ein: einen
-  Heap. Dieser kann stellvertretend für eine ganze Anzahl ähnlicher
+  Heap. Dieser kann stellvertretend fÃ¼r eine ganze Anzahl Ã¤hnlicher
   Strukturen gesehen werden (Datenbank, Dateisystem, assoziatives
   Array ), denen allen gemeinsam ist, dass Daten darin abgelegt
-  werden, und Schlüssel (Referenzen!) zur Wiedererlangung der
-  gespeicherten Daten verwendet werden müssen.
+  werden, und SchlÃ¼ssel (Referenzen!) zur Wiedererlangung der
+  gespeicherten Daten verwendet werden mÃ¼ssen.
 
 
   <ul>
@@ -209,47 +209,47 @@
        Als PDF</a>,
        <a href="funktionale-spec-und-speicher.vdm.ps.gz">
        als komprimierte Postscriptdatei</a>.</li>
-  <li> Übungsblatt <em>Modellierung eines Heap in VDM-SL</em>
+  <li> Ãœbungsblatt <em>Modellierung eines Heap in VDM-SL</em>
        <a href="uebung-03.pdf">
        Als PDF</a>,
        <a href="uebung-03.ps.gz">
        als komprimierte Postscriptdatei</a>.</li>
-  <li> Lösungen: 
+  <li> LÃ¶sungen: 
        <a href="loesung-03.vdm.pdf">
        Als PDF</a>,
        <a href="loesung-03.vdm.ps.gz">
        als komprimierte Postscriptdatei</a>.</li>
   </ul>
 
-  <h2>Runde 4: Ein fortgeschrittenes Modell und einige Fingerübungen</h2>
+  <h2>Runde 4: Ein fortgeschrittenes Modell und einige FingerÃ¼bungen</h2>
 
-  Runde 4 schließlich beschließt den Reigen der VDM-SL-Themen mit
+  Runde 4 schlieÃŸlich beschlieÃŸt den Reigen der VDM-SL-Themen mit
   einer Aufgabe (Nachbarschaft von Theatersitzen und die Allokation
-  zusammenhängender Sitzgruppen) die praktisch nur lösbar ist, wenn
-  man jeden Versuch, an die Darstellung für Implementationszwecke
-  (Listen, Array, was auch immer) zu denken, vollständig aufgibt und
-  über die Topologie der Aufstellung der Theatersitze abstrahiert. Die
+  zusammenhÃ¤ngender Sitzgruppen) die praktisch nur lÃ¶sbar ist, wenn
+  man jeden Versuch, an die Darstellung fÃ¼r Implementationszwecke
+  (Listen, Array, was auch immer) zu denken, vollstÃ¤ndig aufgibt und
+  Ã¼ber die Topologie der Aufstellung der Theatersitze abstrahiert. Die
   Runden 1 bis 4 haben im Wesentlichen modellbasiertes Spezifizieren
   zum Thema (Das ist hier die Antwort auf: Wie spezifiziert man
   Systemteile?). Thematisch darin eingebettet sind jeweils Exkurse zum
-  modularen Programmieren (Runde 2), u.a. auch Erläuterungen über die
-  Namensräume von Modulen und eine Aufgabe zu Make - dem bekannten
-  Werkzeug zur modulweisen inkrementellen Übersetzung (Runde 4). Mit
+  modularen Programmieren (Runde 2), u.a. auch ErlÃ¤uterungen Ã¼ber die
+  NamensrÃ¤ume von Modulen und eine Aufgabe zu Make - dem bekannten
+  Werkzeug zur modulweisen inkrementellen Ãœbersetzung (Runde 4). Mit
   Runde 4 sind die VDM-SL-Aufgaben jedoch abgeschlossen. 
 
 
   <ul>
-  <li> Übungsblatt <em>Theatersitze, Make</em>
+  <li> Ãœbungsblatt <em>Theatersitze, Make</em>
        <a href="uebung-04.pdf">
        Als PDF</a>,
        <a href="uebung-04.ps.gz">
        als komprimierte Postscriptdatei</a>.</li>
-  <li> Lösungen: 
+  <li> LÃ¶sungen: 
        <a href="loesung-04.vdm.pdf">
        Als PDF</a>,
        <a href="loesung-04.vdm.ps.gz">
        als komprimierte Postscriptdatei</a>.</li>
-  <li> Quelltext zur Lösung (<em>FiFo-Implementation</em>):  
+  <li> Quelltext zur LÃ¶sung (<em>FiFo-Implementation</em>):  
        <a href="FiFo-2002-08-26.tgz">
        FiFo-2002-08-26.tgz</a> (komprimiertes Tape-Archive).</li>
   </ul>
@@ -258,12 +258,12 @@
 
 
     <p><sup><a name="fn4">[4]</a></sup> Genau dieses ist eben die
-    Essenz des Systemgedankens, nämlich, dass es möglich sei, einen
+    Essenz des Systemgedankens, nÃ¤mlich, dass es mÃ¶glich sei, einen
     Teil der Welt abzugrenzen, so dass man sich auf die Systemgrenzen
-    konzentrieren und über den Systeminhalt abstrahieren kann.</p>
+    konzentrieren und Ã¼ber den Systeminhalt abstrahieren kann.</p>
 
-    <p><sup><a name="fn5">[5]</a></sup> Daraus können dann auch geeignete
-    Trägermengen konstruiert werden.</p>
+    <p><sup><a name="fn5">[5]</a></sup> Daraus kÃ¶nnen dann auch geeignete
+    TrÃ¤germengen konstruiert werden.</p>
 
     <p><sup><a name="fn6">[6]</a></sup> Nicht alles ist eine Funktion, aber
     alles kann durch eine Funktion beschrieben werden. :-)</p>
@@ -326,20 +326,20 @@
 
 
    <font color="darkred"><b>
-         Ihr Web-Browser unterstützt keine Stylesheets:
+         Ihr Web-Browser unterstÃ¼tzt keine Stylesheets:
    </b></font>
    <font color="blue">
-     Der Web-Browser, den Sie verwenden, unterstützt CSS1-Stylesheets
-     leider nur unvollständig. Sie sehen deshalb ein stark
-     vereinfachtes Layout dieser Seite(n). Wenn Sie das ursprünglich
-     von uns beabsichtigte übersichtlicher und ästhetischere Layout
-     genießen möchten, könnten Sie in Erwägung ziehen, einen neueren
+     Der Web-Browser, den Sie verwenden, unterstÃ¼tzt CSS1-Stylesheets
+     leider nur unvollstÃ¤ndig. Sie sehen deshalb ein stark
+     vereinfachtes Layout dieser Seite(n). Wenn Sie das ursprÃ¼nglich
+     von uns beabsichtigte Ã¼bersichtlicher und Ã¤sthetischere Layout
+     genieÃŸen mÃ¶chten, kÃ¶nnten Sie in ErwÃ¤gung ziehen, einen neueren
      Browser zu verwenden.
      --
      Informationen zu CSS1-kompatiblen Web-Browsern finden Sie bei der
      <a href="http://www.webstandards.org/upgrade/">Upgrade-Initiative
      des Web-Standards-Projektes</a>.
-     E5/Mac, IE6/Windows, Netscape6, and Opera5 (und höher) sowie
+     E5/Mac, IE6/Windows, Netscape6, and Opera5 (und hÃ¶her) sowie
      Mozilla oder Firefox sollten alle CSS1-kompatibel sein.
    </font>
 
